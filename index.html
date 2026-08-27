@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nosso Amor</title>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,8 @@
     font-family: "Segoe UI", sans-serif;
 }
 
-/* TELAS */
+/* ================= TELAS ================= */
+
 .tela {
     display: none;
     width: 100%;
@@ -23,6 +26,7 @@
 .ativa {
     display: flex;
 }
+
 
 /* ================= INTRO ================= */
 
@@ -42,10 +46,12 @@
 }
 
 @keyframes aparecer {
+
     to {
         opacity: 1;
         transform: scale(1);
     }
+
 }
 
 .heart-text {
@@ -57,155 +63,286 @@
 }
 
 @keyframes fade {
+
     to {
         opacity: 1;
     }
+
 }
+
 
 /* ================= HOME ================= */
 
 #home {
     background: radial-gradient(circle, #0d0d0d, #000);
     color: white;
+
     justify-content: center;
     align-items: center;
 }
 
 .home-container {
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 6vw;
+
     width: 100%;
+
     max-width: 1100px;
+
     padding: 0 20px;
 }
 
 .texto-lado {
+
     width: 22vw;
+
     max-width: 260px;
+
     font-size: clamp(14px, 1.2vw, 18px);
+
     line-height: 1.7;
+
     opacity: 0.9;
+
     text-align: center;
 }
 
 .center {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 }
 
 .logo {
+
     width: clamp(140px, 18vw, 220px);
+
     border-radius: 20px;
+
     margin-bottom: 20px;
 }
 
 .btn {
+
     padding: 12px 30px;
+
     font-size: clamp(14px, 1vw, 16px);
+
     background: white;
+
     border-radius: 30px;
+
     border: none;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .btn:hover {
+
     background: #ff4d6d;
+
     color: white;
 }
 
-/* ================= PAGINA 2 ================= */
+
+/* ================= PAGINA PRINCIPAL ================= */
 
 #principal {
+
     background: radial-gradient(circle at center, #080808, #000);
+
     color: white;
-    justify-content: center;
+
+    justify-content: flex-start;
+
     align-items: center;
+
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 80px;
+
+    min-height: 100vh;
+
+    padding-top: 50px;
+
+    padding-bottom: 120px;
+
+    overflow-x: hidden;
 }
 
+
+/* ================= FOTOS ================= */
+
 .container {
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 2vw;
+
+    width: 100%;
 }
 
 .main-img,
 .next {
+
     width: clamp(220px, 30vw, 320px);
+
     height: clamp(220px, 30vw, 320px);
+
     border-radius: 25px;
+
     overflow: hidden;
 }
 
 .main-img {
+
     box-shadow: 0 30px 80px rgba(0,0,0,0.9);
 }
 
 .main-img img,
 .next img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
 }
 
 .next {
+
     opacity: 0.03;
 }
 
+
+/* ================= SETA ================= */
+
 .seta {
+
     width: 38px;
+
     height: 38px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     background: rgba(255,255,255,0.05);
+
     border-radius: 50%;
+
     color: rgba(255,255,255,0.4);
+
     cursor: pointer;
 }
 
+
+/* ================= TEXTOS ================= */
+
 .texto {
+
     margin-top: 40px;
+
     text-align: center;
+
     max-width: 90%;
+
+    color: white;
+}
+
+.texto p {
+
+    font-size: 18px;
 }
 
 .texto-extra {
+
     margin-top: 15px;
+
     font-size: 20px;
+
     opacity: 0.85;
+
+    line-height: 1.6;
+
+    max-width: 700px;
 }
 
-/* ================= CORAÇÃO FINAL ================= */
+
+/* ================= CORAÇÃO ================= */
+
+.heart-wrapper {
+
+    margin-top: 70px;
+
+    height: 230px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.heart-container {
+
+    position: relative;
+
+    display: inline-block;
+
+    transform-origin: center;
+
+    width: 60px;
+
+    height: 60px;
+}
 
 .heart-final {
+
     width: 60px;
+
     transform-origin: center;
+
     transform: translateY(30px);
 }
 
-.heart-wrapper {
-    margin-top: 55px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+
+/* CRESCER */
 
 @keyframes crescer {
+
+    from {
+        transform: translateY(30px) scale(1);
+    }
+
     to {
         transform: translateY(30px) scale(2.6);
     }
+
 }
 
+
+/* PULSAR */
+
 @keyframes pulsar {
+
     0% {
         transform: translateY(30px) scale(2.6);
     }
@@ -217,15 +354,12 @@
     100% {
         transform: translateY(30px) scale(2.6);
     }
+
 }
 
-.heart-container {
-    position: relative;
-    display: inline-block;
-    transform-origin: center;
-}
 
 #principal.ativa .heart-container {
+
     animation:
         crescer 2s ease forwards,
         pulsar 1.5s ease-in-out infinite;
@@ -235,132 +369,253 @@
         4s;
 }
 
+
+/* M.M */
+
 .heart-texto {
+
     position: absolute;
+
     top: 82%;
+
     left: 53%;
+
     transform: translate(-50%, -50%);
+
     color: black;
+
     font-size: 20px;
+
     font-weight: bold;
+
     letter-spacing: 3px;
+
     opacity: 0;
 }
 
 #principal.ativa .heart-texto {
+
     animation: aparecerTexto 1s ease forwards;
+
     animation-delay: 4s;
 }
 
 @keyframes aparecerTexto {
 
     0% {
+
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0.5);
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.5);
+
     }
 
     60% {
+
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1.1);
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.1);
+
     }
 
     100% {
+
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+
     }
+
 }
+
 
 /* ================= CONTADOR ================= */
 
 .contador {
-    margin-top: 100px;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
     text-align: center;
-    color: white;
+
+    margin-top: 20px;
+
+    padding-bottom: 50px;
+
+    position: relative;
+
+    z-index: 20;
 }
 
 .contador-titulo {
+
+    color: white;
+
     font-size: 18px;
-    opacity: 0.8;
-    margin-bottom: 18px;
+
+    margin-bottom: 20px;
+
+    opacity: 0.9;
 }
 
 .contador-tempo {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
-    gap: 18px;
+
+    gap: 25px;
 }
 
 .tempo-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
     min-width: 70px;
 }
 
 .tempo-numero {
-    font-size: 28px;
+
+    color: white;
+
+    font-size: 30px;
+
     font-weight: bold;
+
+    line-height: 1.2;
 }
 
 .tempo-label {
-    font-size: 11px;
+
+    color: white;
+
+    font-size: 10px;
+
     opacity: 0.6;
-    text-transform: uppercase;
+
+    margin-top: 6px;
+
     letter-spacing: 1px;
 }
+
 
 /* ================= RESPONSIVO ================= */
 
 @media (max-width: 768px) {
 
     .home-container {
+
         flex-direction: column;
+
         gap: 30px;
+
     }
 
     .texto-lado {
+
         width: 80%;
+
     }
 
     .container {
+
         flex-direction: column;
+
     }
 
     .next {
+
         display: none;
+
     }
 
     .seta {
+
         margin-top: 10px;
+
+    }
+
+    .texto-extra {
+
+        font-size: 16px;
+
+    }
+
+    .heart-wrapper {
+
+        margin-top: 70px;
+
+        height: 220px;
+
     }
 
     .contador {
-        margin-top: 100px;
+
+        margin-top: 20px;
+
     }
 
     .contador-tempo {
+
         gap: 8px;
+
     }
 
     .tempo-box {
+
         min-width: 60px;
+
     }
 
     .tempo-numero {
+
         font-size: 22px;
+
     }
 
     .tempo-label {
+
         font-size: 9px;
+
     }
+
 }
+
 </style>
+
 </head>
 
+
 <body>
+
 
 <!-- ================= MÚSICA ================= -->
 
 <audio id="musica" loop>
+
     <source src="musica.mp3" type="audio/mpeg">
+
 </audio>
 
 
@@ -368,10 +623,15 @@
 
 <div id="intro" class="tela ativa" onclick="irHome()">
 
-    <img src="coracaov.png" class="heart-img">
+    <img
+        src="coracaov.png"
+        class="heart-img"
+    >
 
     <div class="heart-text">
+
         clique aqui ❤️
+
     </div>
 
 </div>
@@ -382,6 +642,7 @@
 <div id="home" class="tela">
 
     <div class="home-container">
+
 
         <div class="texto-lado">
 
@@ -394,10 +655,18 @@
 
         <div class="center">
 
-            <img src="logo.jpeg" class="logo">
+            <img
+                src="logo.jpeg"
+                class="logo"
+            >
 
-            <button class="btn" onclick="entrar()">
+            <button
+                class="btn"
+                onclick="entrar()"
+            >
+
                 Continuar ❤️
+
             </button>
 
         </div>
@@ -411,16 +680,21 @@
 
         </div>
 
+
     </div>
 
 </div>
 
 
-<!-- ================= PAGINA PRINCIPAL ================= -->
+<!-- ================= ULTIMA PAGINA ================= -->
 
 <div id="principal" class="tela">
 
+
+    <!-- FOTOS -->
+
     <div class="container">
+
 
         <div class="main-img">
 
@@ -432,12 +706,20 @@
         </div>
 
 
-        <div class="seta" onclick="proxima()">
+        <div
+            class="seta"
+            onclick="proxima()"
+        >
+
             ➜
+
         </div>
 
 
-        <div class="next" onclick="proxima()">
+        <div
+            class="next"
+            onclick="proxima()"
+        >
 
             <img
                 id="imgNext"
@@ -446,13 +728,18 @@
 
         </div>
 
+
     </div>
 
+
+    <!-- TEXTOS -->
 
     <div class="texto">
 
         <p>
+
             Desde que te conheci, tudo ficou mais leve... ❤️
+
         </p>
 
 
@@ -465,120 +752,155 @@
 
         </div>
 
-
-        <!-- ================= CORAÇÃO ================= -->
-
-        <div class="heart-wrapper">
-
-            <div class="heart-container">
-
-                <img
-                    src="coracaob.png"
-                    class="heart-final"
-                >
-
-                <span class="heart-texto">
-                    M.M
-                </span>
-
-            </div>
-
-        </div>
+    </div>
 
 
-        <!-- ================= CONTADOR ================= -->
+    <!-- CORAÇÃO -->
 
-        <div class="contador">
+    <div class="heart-wrapper">
 
-            <div class="contador-titulo">
-                Nosso amor começou há ❤️
-            </div>
+        <div class="heart-container">
 
+            <img
+                src="coracaob.png"
+                class="heart-final"
+            >
 
-            <div class="contador-tempo">
+            <span class="heart-texto">
 
-                <div class="tempo-box">
+                M.M
 
-                    <div
-                        id="dias"
-                        class="tempo-numero">
-                        0
-                    </div>
-
-                    <div class="tempo-label">
-                        Dias
-                    </div>
-
-                </div>
-
-
-                <div class="tempo-box">
-
-                    <div
-                        id="horas"
-                        class="tempo-numero">
-                        0
-                    </div>
-
-                    <div class="tempo-label">
-                        Horas
-                    </div>
-
-                </div>
-
-
-                <div class="tempo-box">
-
-                    <div
-                        id="minutos"
-                        class="tempo-numero">
-                        0
-                    </div>
-
-                    <div class="tempo-label">
-                        Minutos
-                    </div>
-
-                </div>
-
-
-                <div class="tempo-box">
-
-                    <div
-                        id="segundos"
-                        class="tempo-numero">
-                        0
-                    </div>
-
-                    <div class="tempo-label">
-                        Segundos
-                    </div>
-
-                </div>
-
-            </div>
+            </span>
 
         </div>
 
     </div>
+
+
+    <!-- CONTADOR -->
+
+    <div class="contador">
+
+
+        <div class="contador-titulo">
+
+            Nosso amor começou há ❤️
+
+        </div>
+
+
+        <div class="contador-tempo">
+
+
+            <div class="tempo-box">
+
+                <div
+                    id="dias"
+                    class="tempo-numero"
+                >
+
+                    0
+
+                </div>
+
+                <div class="tempo-label">
+
+                    DIAS
+
+                </div>
+
+            </div>
+
+
+            <div class="tempo-box">
+
+                <div
+                    id="horas"
+                    class="tempo-numero"
+                >
+
+                    0
+
+                </div>
+
+                <div class="tempo-label">
+
+                    HORAS
+
+                </div>
+
+            </div>
+
+
+            <div class="tempo-box">
+
+                <div
+                    id="minutos"
+                    class="tempo-numero"
+                >
+
+                    0
+
+                </div>
+
+                <div class="tempo-label">
+
+                    MINUTOS
+
+                </div>
+
+            </div>
+
+
+            <div class="tempo-box">
+
+                <div
+                    id="segundos"
+                    class="tempo-numero"
+                >
+
+                    0
+
+                </div>
+
+                <div class="tempo-label">
+
+                    SEGUNDOS
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
 
 </div>
 
 
 <script>
 
+
 /* ================= TROCA DE TELAS ================= */
 
 function irHome() {
 
-    document.getElementById("intro")
+    document
+        .getElementById("intro")
         .classList.remove("ativa");
 
-    document.getElementById("home")
+
+    document
+        .getElementById("home")
         .classList.add("ativa");
+
 
     const musica =
         document.getElementById("musica");
+
 
     musica.play().catch(() => {});
 
@@ -587,10 +909,13 @@ function irHome() {
 
 function entrar() {
 
-    document.getElementById("home")
+    document
+        .getElementById("home")
         .classList.remove("ativa");
 
-    document.getElementById("principal")
+
+    document
+        .getElementById("principal")
         .classList.add("ativa");
 
 }
@@ -601,8 +926,11 @@ function entrar() {
 let fotos = [
 
     "fotos/foto1.jpeg",
+
     "fotos/foto2.jpeg",
+
     "fotos/foto3.jpeg",
+
     "fotos/foto4.jpeg"
 
 ];
@@ -610,60 +938,86 @@ let fotos = [
 
 function atualizar() {
 
-    document.getElementById("imgPrincipal").src =
-        fotos[0];
+    document
+        .getElementById("imgPrincipal")
+        .src = fotos[0];
 
-    document.getElementById("imgNext").src =
-        fotos[1];
+
+    document
+        .getElementById("imgNext")
+        .src = fotos[1];
 
 }
 
 
 function proxima() {
 
-    fotos.push(fotos.shift());
+    fotos.push(
+        fotos.shift()
+    );
 
     atualizar();
 
 }
 
 
-setInterval(proxima, 3500);
+setInterval(
+    proxima,
+    3500
+);
+
 
 atualizar();
 
 
-/* ================= CONTADOR DO NOSSO AMOR ================= */
+/* ================= CONTADOR ================= */
+
 
 /*
-   28/03/2026
-   O mês é 2 porque no JavaScript:
+   DATA DO INÍCIO:
+
+   28/03/2026 às 00:00:00
+
+   No JavaScript:
    Janeiro = 0
    Fevereiro = 1
    Março = 2
 */
 
 const inicio =
-    new Date(2026, 2, 28, 0, 0, 0);
+    new Date(
+        2026,
+        2,
+        28,
+        0,
+        0,
+        0
+    );
 
 
 function atualizarContador() {
 
-    const agora = new Date();
+
+    const agora =
+        new Date();
+
 
     let diferenca =
-        agora.getTime() -
+        agora.getTime()
+        -
         inicio.getTime();
 
 
-    /* Evita números negativos */
+    /* Evita valores negativos */
 
     if (diferenca < 0) {
+
         diferenca = 0;
+
     }
 
 
-    /* Calcula os dias */
+    /* DIAS */
 
     const dias =
         Math.floor(
@@ -672,81 +1026,76 @@ function atualizarContador() {
         );
 
 
-    /* Calcula as horas restantes */
+    /* HORAS */
 
     const horas =
         Math.floor(
             (diferenca /
-            (1000 * 60 * 60)) % 24
+            (1000 * 60 * 60))
+            % 24
         );
 
 
-    /* Calcula os minutos restantes */
+    /* MINUTOS */
 
     const minutos =
         Math.floor(
             (diferenca /
-            (1000 * 60)) % 60
+            (1000 * 60))
+            % 60
         );
 
 
-    /* Calcula os segundos restantes */
+    /* SEGUNDOS */
 
     const segundos =
         Math.floor(
             (diferenca /
-            1000) % 60
+            1000)
+            % 60
         );
 
 
-    /* Mostra na tela */
+    /* COLOCA NA TELA */
 
-    document.getElementById("dias")
+    document
+        .getElementById("dias")
         .textContent = dias;
 
-    document.getElementById("horas")
+
+    document
+        .getElementById("horas")
         .textContent = horas;
 
-    document.getElementById("minutos")
+
+    document
+        .getElementById("minutos")
         .textContent = minutos;
 
-    document.getElementById("segundos")
+
+    document
+        .getElementById("segundos")
         .textContent = segundos;
 
 }
 
 
-/* Inicia imediatamente */
+/* PRIMEIRA ATUALIZAÇÃO */
 
 atualizarContador();
 
 
-/* Continua contando para sempre */
+/* ATUALIZA A CADA 1 SEGUNDO */
 
 setInterval(
     atualizarContador,
     1000
 );
 
+
 </script>
 
+
 </body>
+
 </html>
-
-Estrutura dos arquivos continua igual à sua:
-
-seu-site/
-│
-├── index.html
-├── musica.mp3
-├── coracaov.png
-├── coracaob.png
-├── logo.jpeg
-│
-└── fotos/
-    ├── foto1.jpeg
-    ├── foto2.jpeg
-    ├── foto3.jpeg
-    └── foto4.jpeg
-
-O contador usa 28/03/2026 às 00:00 como início e fica rodando automaticamente, inclusive enquanto a pessoa permanece na última página.
