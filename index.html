@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nosso Amor</title>
 
 <style>
@@ -54,12 +51,10 @@ body {
 }
 
 @keyframes aparecer {
-
     to {
         opacity: 1;
         transform: scale(1);
     }
-
 }
 
 .heart-text {
@@ -71,11 +66,9 @@ body {
 }
 
 @keyframes fade {
-
     to {
         opacity: 1;
     }
-
 }
 
 
@@ -84,106 +77,68 @@ body {
 #home {
     background: radial-gradient(circle, #0d0d0d, #000);
     color: white;
-
     justify-content: center;
     align-items: center;
 }
 
 .home-container {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 6vw;
-
     width: 100%;
-
     max-width: 1100px;
-
     padding: 0 20px;
 }
 
 .texto-lado {
-
     width: 22vw;
-
     max-width: 260px;
-
     font-size: clamp(14px, 1.2vw, 18px);
-
     line-height: 1.7;
-
     opacity: 0.9;
-
     text-align: center;
 }
 
 .center {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 }
 
 .logo {
-
     width: clamp(140px, 18vw, 220px);
-
     border-radius: 20px;
-
     margin-bottom: 20px;
 }
 
 .btn {
-
     padding: 12px 30px;
-
     font-size: clamp(14px, 1vw, 16px);
-
     background: white;
-
     border-radius: 30px;
-
     border: none;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .btn:hover {
-
     background: #ff4d6d;
-
     color: white;
 }
 
 
-/* ================= PÁGINA PRINCIPAL ================= */
+/* ================= PRINCIPAL ================= */
 
 #principal {
-
     background: radial-gradient(circle at center, #080808, #000);
-
     color: white;
-
     justify-content: flex-start;
-
     align-items: center;
-
     flex-direction: column;
-
     min-height: 100vh;
-
     padding-top: 50px;
-
     padding-bottom: 120px;
-
     overflow-x: hidden;
 }
 
@@ -191,47 +146,33 @@ body {
 /* ================= FOTOS ================= */
 
 .container {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 2vw;
-
     width: 100%;
 }
 
 .main-img,
 .next {
-
     width: clamp(220px, 30vw, 320px);
-
     height: clamp(220px, 30vw, 320px);
-
     border-radius: 25px;
-
     overflow: hidden;
 }
 
 .main-img {
-
     box-shadow: 0 30px 80px rgba(0,0,0,0.9);
 }
 
 .main-img img,
 .next img {
-
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
 }
 
 .next {
-
     opacity: 0.03;
 }
 
@@ -239,23 +180,14 @@ body {
 /* ================= SETA ================= */
 
 .seta {
-
     width: 38px;
-
     height: 38px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     background: rgba(255,255,255,0.05);
-
     border-radius: 50%;
-
     color: rgba(255,255,255,0.4);
-
     cursor: pointer;
 }
 
@@ -263,31 +195,21 @@ body {
 /* ================= TEXTOS ================= */
 
 .texto {
-
     margin-top: 40px;
-
     text-align: center;
-
     max-width: 90%;
-
     color: white;
 }
 
 .texto p {
-
     font-size: 18px;
 }
 
 .texto-extra {
-
     margin-top: 15px;
-
     font-size: 20px;
-
     opacity: 0.85;
-
     line-height: 1.6;
-
     max-width: 700px;
 }
 
@@ -295,44 +217,27 @@ body {
 /* ================= CORAÇÃO ================= */
 
 .heart-wrapper {
-
     margin-top: 70px;
-
     height: 230px;
-
     display: flex;
-
     justify-content: center;
-
     align-items: flex-start;
-
     width: 100%;
 }
 
 .heart-container {
-
     position: relative;
-
     display: inline-block;
-
     transform-origin: center;
-
     width: 60px;
-
     height: 60px;
 }
 
 .heart-final {
-
     width: 60px;
-
     transform-origin: center;
-
     transform: translateY(30px);
 }
-
-
-/* ================= ANIMAÇÃO CORAÇÃO ================= */
 
 @keyframes crescer {
 
@@ -373,27 +278,18 @@ body {
         4s;
 }
 
-
-/* ================= M.M ================= */
-
 .heart-texto {
 
     position: absolute;
-
     top: 82%;
-
     left: 53%;
-
     transform: translate(-50%, -50%);
 
     color: black;
-
     font-size: 20px;
-
     font-weight: bold;
 
     letter-spacing: 3px;
-
     opacity: 0;
 }
 
@@ -408,33 +304,24 @@ body {
 @keyframes aparecerTexto {
 
     0% {
-
         opacity: 0;
-
         transform:
             translate(-50%, -50%)
             scale(0.5);
-
     }
 
     60% {
-
         opacity: 1;
-
         transform:
             translate(-50%, -50%)
             scale(1.1);
-
     }
 
     100% {
-
         opacity: 1;
-
         transform:
             translate(-50%, -50%)
             scale(1);
-
     }
 
 }
@@ -447,11 +334,9 @@ body {
     width: 100%;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -461,7 +346,6 @@ body {
     padding-bottom: 50px;
 
     position: relative;
-
     z-index: 20;
 }
 
@@ -481,7 +365,6 @@ body {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     gap: 25px;
@@ -494,7 +377,6 @@ body {
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     min-width: 70px;
@@ -544,9 +426,6 @@ body {
     padding: 0 20px;
 }
 
-
-/* TÍTULO DOS VÍDEOS */
-
 .videos-titulo {
 
     color: white;
@@ -564,9 +443,6 @@ body {
     opacity: 0.95;
 }
 
-
-/* CADA VÍDEO */
-
 .video-box {
 
     width: 100%;
@@ -579,9 +455,6 @@ body {
 
     align-items: center;
 }
-
-
-/* VÍDEO */
 
 .video-container {
 
@@ -598,17 +471,12 @@ body {
     background: #000;
 
     box-shadow:
-        0 20px 60px
-        rgba(0,0,0,0.8);
+        0 20px 60px rgba(0,0,0,0.8);
 }
-
-
-/* VÍDEO REAL */
 
 .video {
 
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -619,7 +487,7 @@ body {
 }
 
 
-/* ================= TELA PRETA ANTI-SPOILER ================= */
+/* ================= TELA PRETA DO VÍDEO ================= */
 
 .video-overlay {
 
@@ -634,30 +502,29 @@ body {
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     z-index: 5;
 
     cursor: pointer;
 
-    transition: opacity 0.4s ease;
+    transition:
+        opacity 0.4s ease;
 }
-
-
-/* BOTÃO PLAY */
 
 .play-button {
 
     width: 75px;
-
     height: 75px;
 
     border-radius: 50%;
 
-    border: 1px solid rgba(255,255,255,0.3);
+    border:
+        1px solid
+        rgba(255,255,255,0.3);
 
-    background: rgba(255,255,255,0.08);
+    background:
+        rgba(255,255,255,0.08);
 
     color: white;
 
@@ -666,7 +533,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding-left: 5px;
@@ -676,16 +542,13 @@ body {
     backdrop-filter: blur(5px);
 }
 
-.video-overlay:hover
-.play-button {
+.video-overlay:hover .play-button {
 
     transform: scale(1.08);
 
-    background: rgba(255,255,255,0.15);
+    background:
+        rgba(255,255,255,0.15);
 }
-
-
-/* TEXTO DO PLAY */
 
 .play-text {
 
@@ -700,9 +563,6 @@ body {
     letter-spacing: 1px;
 }
 
-
-/* ESCONDE OVERLAY */
-
 .video-overlay.escondido {
 
     opacity: 0;
@@ -716,7 +576,6 @@ body {
 .video:fullscreen {
 
     width: 100vw;
-
     height: 100vh;
 
     object-fit: contain;
@@ -727,7 +586,6 @@ body {
 .video:-webkit-full-screen {
 
     width: 100vw;
-
     height: 100vh;
 
     object-fit: contain;
@@ -745,37 +603,31 @@ body {
         flex-direction: column;
 
         gap: 30px;
-
     }
 
     .texto-lado {
 
         width: 80%;
-
     }
 
     .container {
 
         flex-direction: column;
-
     }
 
     .next {
 
         display: none;
-
     }
 
     .seta {
 
         margin-top: 10px;
-
     }
 
     .texto-extra {
 
         font-size: 16px;
-
     }
 
     .heart-wrapper {
@@ -783,37 +635,31 @@ body {
         margin-top: 70px;
 
         height: 220px;
-
     }
 
     .contador {
 
         margin-top: 20px;
-
     }
 
     .contador-tempo {
 
         gap: 8px;
-
     }
 
     .tempo-box {
 
         min-width: 60px;
-
     }
 
     .tempo-numero {
 
         font-size: 22px;
-
     }
 
     .tempo-label {
 
         font-size: 9px;
-
     }
 
     .videos {
@@ -821,7 +667,6 @@ body {
         gap: 35px;
 
         padding: 0 15px;
-
     }
 
     .videos-titulo {
@@ -829,64 +674,53 @@ body {
         font-size: 21px;
 
         margin-bottom: -10px;
-
     }
 
     .video-container {
 
         border-radius: 20px;
-
     }
 
     .play-button {
 
         width: 68px;
-
         height: 68px;
 
         font-size: 27px;
-
     }
 
 }
-
 
 @media (max-width: 400px) {
 
     .contador-tempo {
 
         gap: 4px;
-
     }
 
     .tempo-box {
 
         min-width: 55px;
-
     }
 
     .tempo-numero {
 
         font-size: 20px;
-
     }
 
     .tempo-label {
 
         font-size: 8px;
-
     }
 
     .video-container {
 
         border-radius: 18px;
-
     }
 
 }
 
 </style>
-
 </head>
 
 
@@ -909,13 +743,11 @@ body {
 <div
     id="intro"
     class="tela ativa"
-    onclick="irHome()"
->
+    onclick="irHome()">
 
     <img
         src="coracaov.png"
-        class="heart-img"
-    >
+        class="heart-img">
 
     <div class="heart-text">
 
@@ -930,17 +762,20 @@ body {
 
 <div
     id="home"
-    class="tela"
->
+    class="tela">
 
     <div class="home-container">
 
 
         <div class="texto-lado">
 
-            Eu sempre soube que seria você, desde o primeiro momento
-            não tive dúvidas. E hoje, olhando tudo que a gente vive,
-            tenho ainda mais certeza que encontrei a mulher da minha vida.
+            Eu sempre soube que seria você,
+            desde o primeiro momento
+            não tive dúvidas.
+
+            E hoje, olhando tudo que a gente vive,
+            tenho ainda mais certeza que encontrei
+            a mulher da minha vida.
 
         </div>
 
@@ -949,13 +784,11 @@ body {
 
             <img
                 src="logo.jpeg"
-                class="logo"
-            >
+                class="logo">
 
             <button
                 class="btn"
-                onclick="entrar()"
-            >
+                onclick="entrar()">
 
                 Continuar ❤️
 
@@ -966,9 +799,12 @@ body {
 
         <div class="texto-lado">
 
-            O tempo com você simplesmente passa rápido, independente
-            do que a gente esteja fazendo. Nossa vibe combina de um jeito
-            único, e desde que a gente ficou junto, os dias ganharam mais vida.
+            O tempo com você simplesmente passa rápido,
+            independente do que a gente esteja fazendo.
+
+            Nossa vibe combina de um jeito único,
+            e desde que a gente ficou junto,
+            os dias ganharam mais vida.
 
         </div>
 
@@ -978,15 +814,14 @@ body {
 </div>
 
 
-<!-- ================= PÁGINA PRINCIPAL ================= -->
+<!-- ================= PRINCIPAL ================= -->
 
 <div
     id="principal"
-    class="tela"
->
+    class="tela">
 
 
-    <!-- ================= FOTOS ================= -->
+    <!-- FOTOS -->
 
     <div class="container">
 
@@ -995,16 +830,14 @@ body {
 
             <img
                 id="imgPrincipal"
-                src="fotos/foto1.jpeg"
-            >
+                src="fotos/foto1.jpeg">
 
         </div>
 
 
         <div
             class="seta"
-            onclick="proxima()"
-        >
+            onclick="proxima()">
 
             ➜
 
@@ -1013,13 +846,11 @@ body {
 
         <div
             class="next"
-            onclick="proxima()"
-        >
+            onclick="proxima()">
 
             <img
                 id="imgNext"
-                src="fotos/foto2.jpeg"
-            >
+                src="fotos/foto2.jpeg">
 
         </div>
 
@@ -1027,22 +858,26 @@ body {
     </div>
 
 
-    <!-- ================= TEXTOS ================= -->
+    <!-- TEXTOS -->
 
     <div class="texto">
 
         <p>
 
-            Desde que te conheci, tudo ficou mais leve... ❤️
+            Desde que te conheci,
+            tudo ficou mais leve... ❤️
 
         </p>
 
 
         <div class="texto-extra">
 
-            E cada momento ao seu lado só confirma que tudo isso
-            faz sentido. Não importa onde a gente esteja ou o que
-            esteja fazendo, sempre parece o melhor lugar do mundo
+            E cada momento ao seu lado só confirma
+            que tudo isso faz sentido.
+
+            Não importa onde a gente esteja
+            ou o que esteja fazendo,
+            sempre parece o melhor lugar do mundo
             quando é com você.
 
         </div>
@@ -1050,7 +885,7 @@ body {
     </div>
 
 
-    <!-- ================= CORAÇÃO ================= -->
+    <!-- CORAÇÃO -->
 
     <div class="heart-wrapper">
 
@@ -1058,8 +893,7 @@ body {
 
             <img
                 src="coracaob.png"
-                class="heart-final"
-            >
+                class="heart-final">
 
             <span class="heart-texto">
 
@@ -1072,10 +906,9 @@ body {
     </div>
 
 
-    <!-- ================= CONTADOR ================= -->
+    <!-- CONTADOR -->
 
     <div class="contador">
-
 
         <div class="contador-titulo">
 
@@ -1091,13 +924,16 @@ body {
 
                 <div
                     id="dias"
-                    class="tempo-numero"
-                >
+                    class="tempo-numero">
+
                     0
+
                 </div>
 
                 <div class="tempo-label">
+
                     DIAS
+
                 </div>
 
             </div>
@@ -1107,13 +943,16 @@ body {
 
                 <div
                     id="horas"
-                    class="tempo-numero"
-                >
+                    class="tempo-numero">
+
                     0
+
                 </div>
 
                 <div class="tempo-label">
+
                     HORAS
+
                 </div>
 
             </div>
@@ -1123,13 +962,16 @@ body {
 
                 <div
                     id="minutos"
-                    class="tempo-numero"
-                >
+                    class="tempo-numero">
+
                     0
+
                 </div>
 
                 <div class="tempo-label">
+
                     MINUTOS
+
                 </div>
 
             </div>
@@ -1139,13 +981,16 @@ body {
 
                 <div
                     id="segundos"
-                    class="tempo-numero"
-                >
+                    class="tempo-numero">
+
                     0
+
                 </div>
 
                 <div class="tempo-label">
+
                     SEGUNDOS
+
                 </div>
 
             </div>
@@ -1161,8 +1006,6 @@ body {
     <section class="videos">
 
 
-        <!-- TÍTULO -->
-
         <h2 class="videos-titulo">
 
             Nossos momentos 🤍
@@ -1170,35 +1013,32 @@ body {
         </h2>
 
 
-        <!-- ================= VÍDEO 1 ================= -->
+        <!-- VÍDEO 1 -->
 
         <div class="video-box">
 
             <div class="video-container">
 
+
                 <video
                     id="video1"
                     class="video"
                     playsinline
-                    preload="metadata"
-                >
+                    preload="metadata">
 
                     <source
                         src="lv_7503640539556826421_20260911170732.mp4"
-                        type="video/mp4"
-                    >
+                        type="video/mp4">
 
                     Seu navegador não suporta vídeos.
 
                 </video>
 
 
-                <!-- TELA PRETA -->
-
                 <div
                     class="video-overlay"
-                    onclick="assistirVideo('video1', this)"
-                >
+                    onclick="assistirVideo('video1', this)">
+
 
                     <div class="play-button">
 
@@ -1206,48 +1046,48 @@ body {
 
                     </div>
 
+
                     <div class="play-text">
 
                         assistir momento 🤍
 
                     </div>
 
+
                 </div>
+
 
             </div>
 
         </div>
 
 
-        <!-- ================= VÍDEO 2 ================= -->
+        <!-- VÍDEO 2 -->
 
         <div class="video-box">
 
             <div class="video-container">
 
+
                 <video
                     id="video2"
                     class="video"
                     playsinline
-                    preload="metadata"
-                >
+                    preload="metadata">
 
                     <source
                         src="lv_0_20260911170919.mp4"
-                        type="video/mp4"
-                    >
+                        type="video/mp4">
 
                     Seu navegador não suporta vídeos.
 
                 </video>
 
 
-                <!-- TELA PRETA -->
-
                 <div
                     class="video-overlay"
-                    onclick="assistirVideo('video2', this)"
-                >
+                    onclick="assistirVideo('video2', this)">
+
 
                     <div class="play-button">
 
@@ -1255,13 +1095,16 @@ body {
 
                     </div>
 
+
                     <div class="play-text">
 
                         assistir momento 🤍
 
                     </div>
 
+
                 </div>
+
 
             </div>
 
@@ -1284,7 +1127,6 @@ function irHome() {
     document
         .getElementById("intro")
         .classList.remove("ativa");
-
 
     document
         .getElementById("home")
@@ -1321,11 +1163,8 @@ function entrar() {
 let fotos = [
 
     "fotos/foto1.jpeg",
-
     "fotos/foto2.jpeg",
-
     "fotos/foto3.jpeg",
-
     "fotos/foto4.jpeg"
 
 ];
@@ -1366,14 +1205,6 @@ atualizar();
 
 
 /* ================= CONTADOR ================= */
-
-/*
-
-    DATA DO INÍCIO:
-
-    28/03/2026 às 00:00:00
-
-*/
 
 const inicio =
     new Date(
@@ -1469,15 +1300,16 @@ setInterval(
 
 /* ================= VÍDEOS ================= */
 
+
 /*
-
-    Ao clicar na tela preta:
-
-    1. Remove a proteção preta
-    2. Começa o vídeo
-    3. Tenta abrir tela cheia
-
+    Guarda se a música estava tocando
+    antes de abrir o vídeo.
 */
+
+let musicaEstavaTocando = false;
+
+
+/* ================= ABRIR VÍDEO ================= */
 
 async function assistirVideo(id, overlay) {
 
@@ -1485,18 +1317,39 @@ async function assistirVideo(id, overlay) {
         document.getElementById(id);
 
 
-    /* Remove a tela preta */
+    const musica =
+        document.getElementById("musica");
 
-    overlay.classList.add("escondido");
 
+    /*
+        Guarda o estado da música.
+    */
+
+    musicaEstavaTocando =
+        !musica.paused;
+
+
+    /*
+        Para a música.
+    */
+
+    musica.pause();
+
+
+    /*
+        Esconde a tela preta.
+    */
+
+    overlay.classList.add(
+        "escondido"
+    );
+
+
+    /*
+        Coloca o vídeo em tela cheia.
+    */
 
     try {
-
-        /*
-            Solicita tela cheia.
-            Em celulares, o navegador pode
-            controlar esse comportamento.
-        */
 
         if (video.requestFullscreen) {
 
@@ -1504,7 +1357,9 @@ async function assistirVideo(id, overlay) {
 
         }
 
-        else if (video.webkitEnterFullscreen) {
+        else if (
+            video.webkitEnterFullscreen
+        ) {
 
             video.webkitEnterFullscreen();
 
@@ -1515,59 +1370,129 @@ async function assistirVideo(id, overlay) {
     catch (erro) {
 
         console.log(
-            "Tela cheia não disponível neste navegador."
+            "Tela cheia não disponível."
         );
 
     }
 
 
-    /* Começa o vídeo */
+    /*
+        Começa o vídeo.
+    */
 
-    video.play().catch(() => {});
+    video
+        .play()
+        .catch(() => {});
 
 }
 
 
-/* ================= QUANDO TERMINAR ================= */
+/* ================= SAIR DO VÍDEO ================= */
+
+function sairDoVideo() {
+
+
+    /*
+        Para todos os vídeos.
+    */
+
+    document
+        .querySelectorAll(".video")
+        .forEach(video => {
+
+
+            video.pause();
+
+
+            /*
+                Procura a tela preta
+                daquele vídeo.
+            */
+
+            const overlay =
+                video
+                .parentElement
+                .querySelector(
+                    ".video-overlay"
+                );
+
+
+            /*
+                Mostra novamente
+                a tela preta.
+            */
+
+            if (overlay) {
+
+                overlay.classList.remove(
+                    "escondido"
+                );
+
+            }
+
+        });
+
+
+    /*
+        Pega a música.
+    */
+
+    const musica =
+        document.getElementById("musica");
+
+
+    /*
+        A música só volta se
+        estava tocando antes
+        do vídeo.
+    */
+
+    if (musicaEstavaTocando) {
+
+        musica
+            .play()
+            .catch(() => {});
+
+    }
+
+}
+
+
+/* ================= SAÍDA DA TELA CHEIA ================= */
+
+document.addEventListener(
+    "fullscreenchange",
+    () => {
+
+
+        /*
+            Se não existe mais
+            elemento em tela cheia,
+            significa que saiu do vídeo.
+        */
+
+        if (!document.fullscreenElement) {
+
+            sairDoVideo();
+
+        }
+
+    }
+);
+
+
+/* ================= IPHONE / SAFARI ================= */
 
 document
     .querySelectorAll(".video")
     .forEach(video => {
 
+
         video.addEventListener(
-            "ended",
+            "webkitendfullscreen",
             () => {
 
-                /*
-                    Volta para a tela normal
-                    quando o vídeo acaba.
-                */
-
-                if (document.fullscreenElement) {
-
-                    document
-                        .exitFullscreen()
-                        .catch(() => {});
-
-                }
-
-                /*
-                    Mostra novamente a tela preta
-                    para evitar spoiler caso aperte
-                    novamente.
-                */
-
-                const container =
-                    video.parentElement;
-
-                const overlay =
-                    container.querySelector(
-                        ".video-overlay"
-                    );
-
-                overlay.classList.remove(
-                    "escondido"
-                );
+                sairDoVideo();
 
             }
         );
@@ -1579,5 +1504,4 @@ document
 
 
 </body>
-
 </html>
