@@ -54,10 +54,12 @@ body {
 }
 
 @keyframes aparecer {
+
     to {
         opacity: 1;
         transform: scale(1);
     }
+
 }
 
 .heart-text {
@@ -69,9 +71,11 @@ body {
 }
 
 @keyframes fade {
+
     to {
         opacity: 1;
     }
+
 }
 
 
@@ -80,53 +84,82 @@ body {
 #home {
     background: radial-gradient(circle, #0d0d0d, #000);
     color: white;
+
     justify-content: center;
     align-items: center;
 }
 
 .home-container {
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 6vw;
+
     width: 100%;
+
     max-width: 1100px;
+
     padding: 0 20px;
 }
 
 .texto-lado {
+
     width: 22vw;
+
     max-width: 260px;
+
     font-size: clamp(14px, 1.2vw, 18px);
+
     line-height: 1.7;
+
     opacity: 0.9;
+
     text-align: center;
 }
 
 .center {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
 }
 
 .logo {
+
     width: clamp(140px, 18vw, 220px);
+
     border-radius: 20px;
+
     margin-bottom: 20px;
 }
 
 .btn {
+
     padding: 12px 30px;
+
     font-size: clamp(14px, 1vw, 16px);
+
     background: white;
+
     border-radius: 30px;
+
     border: none;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .btn:hover {
+
     background: #ff4d6d;
+
     color: white;
 }
 
@@ -134,14 +167,23 @@ body {
 /* ================= PÁGINA PRINCIPAL ================= */
 
 #principal {
+
     background: radial-gradient(circle at center, #080808, #000);
+
     color: white;
+
     justify-content: flex-start;
+
     align-items: center;
+
     flex-direction: column;
+
     min-height: 100vh;
+
     padding-top: 50px;
+
     padding-bottom: 120px;
+
     overflow-x: hidden;
 }
 
@@ -149,33 +191,47 @@ body {
 /* ================= FOTOS ================= */
 
 .container {
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 2vw;
+
     width: 100%;
 }
 
 .main-img,
 .next {
+
     width: clamp(220px, 30vw, 320px);
+
     height: clamp(220px, 30vw, 320px);
+
     border-radius: 25px;
+
     overflow: hidden;
 }
 
 .main-img {
+
     box-shadow: 0 30px 80px rgba(0,0,0,0.9);
 }
 
 .main-img img,
 .next img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
 }
 
 .next {
+
     opacity: 0.03;
 }
 
@@ -183,14 +239,23 @@ body {
 /* ================= SETA ================= */
 
 .seta {
+
     width: 38px;
+
     height: 38px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     background: rgba(255,255,255,0.05);
+
     border-radius: 50%;
+
     color: rgba(255,255,255,0.4);
+
     cursor: pointer;
 }
 
@@ -198,21 +263,31 @@ body {
 /* ================= TEXTOS ================= */
 
 .texto {
+
     margin-top: 40px;
+
     text-align: center;
+
     max-width: 90%;
+
     color: white;
 }
 
 .texto p {
+
     font-size: 18px;
 }
 
 .texto-extra {
+
     margin-top: 15px;
+
     font-size: 20px;
+
     opacity: 0.85;
+
     line-height: 1.6;
+
     max-width: 700px;
 }
 
@@ -220,30 +295,44 @@ body {
 /* ================= CORAÇÃO ================= */
 
 .heart-wrapper {
+
     margin-top: 70px;
+
     height: 230px;
+
     display: flex;
+
     justify-content: center;
+
     align-items: flex-start;
+
     width: 100%;
 }
 
 .heart-container {
+
     position: relative;
+
     display: inline-block;
+
     transform-origin: center;
+
     width: 60px;
+
     height: 60px;
 }
 
 .heart-final {
+
     width: 60px;
+
     transform-origin: center;
+
     transform: translateY(30px);
 }
 
 
-/* ================= ANIMAÇÃO ================= */
+/* ================= ANIMAÇÃO CORAÇÃO ================= */
 
 @keyframes crescer {
 
@@ -290,7 +379,9 @@ body {
 .heart-texto {
 
     position: absolute;
+
     top: 82%;
+
     left: 53%;
 
     transform: translate(-50%, -50%);
@@ -317,24 +408,33 @@ body {
 @keyframes aparecerTexto {
 
     0% {
+
         opacity: 0;
+
         transform:
             translate(-50%, -50%)
             scale(0.5);
+
     }
 
     60% {
+
         opacity: 1;
+
         transform:
             translate(-50%, -50%)
             scale(1.1);
+
     }
 
     100% {
+
         opacity: 1;
+
         transform:
             translate(-50%, -50%)
             scale(1);
+
     }
 
 }
@@ -347,9 +447,11 @@ body {
     width: 100%;
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
@@ -379,6 +481,7 @@ body {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     gap: 25px;
@@ -391,6 +494,7 @@ body {
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     min-width: 70px;
@@ -433,12 +537,35 @@ body {
 
     align-items: center;
 
-    gap: 35px;
+    gap: 45px;
 
     margin-top: 20px;
 
     padding: 0 20px;
 }
+
+
+/* TÍTULO DOS VÍDEOS */
+
+.videos-titulo {
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    margin-bottom: -20px;
+
+    opacity: 0.95;
+}
+
+
+/* CADA VÍDEO */
 
 .video-box {
 
@@ -453,36 +580,159 @@ body {
     align-items: center;
 }
 
-.video-titulo {
 
-    color: white;
+/* VÍDEO */
 
-    font-size: 16px;
+.video-container {
 
-    opacity: 0.75;
-
-    margin-bottom: 12px;
-
-    text-align: center;
-}
-
-.video {
+    position: relative;
 
     width: 100%;
 
     aspect-ratio: 1 / 1;
 
-    object-fit: cover;
-
     border-radius: 25px;
 
-    background: #080808;
+    overflow: hidden;
+
+    background: #000;
 
     box-shadow:
         0 20px 60px
         rgba(0,0,0,0.8);
+}
+
+
+/* VÍDEO REAL */
+
+.video {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
 
     display: block;
+
+    background: #000;
+}
+
+
+/* ================= TELA PRETA ANTI-SPOILER ================= */
+
+.video-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 5;
+
+    cursor: pointer;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* BOTÃO PLAY */
+
+.play-button {
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding-left: 5px;
+
+    transition: 0.3s;
+
+    backdrop-filter: blur(5px);
+}
+
+.video-overlay:hover
+.play-button {
+
+    transform: scale(1.08);
+
+    background: rgba(255,255,255,0.15);
+}
+
+
+/* TEXTO DO PLAY */
+
+.play-text {
+
+    color: white;
+
+    font-size: 14px;
+
+    margin-top: 15px;
+
+    opacity: 0.7;
+
+    letter-spacing: 1px;
+}
+
+
+/* ESCONDE OVERLAY */
+
+.video-overlay.escondido {
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* ================= TELA CHEIA ================= */
+
+.video:fullscreen {
+
+    width: 100vw;
+
+    height: 100vh;
+
+    object-fit: contain;
+
+    background: black;
+}
+
+.video:-webkit-full-screen {
+
+    width: 100vw;
+
+    height: 100vh;
+
+    object-fit: contain;
+
+    background: black;
 }
 
 
@@ -491,86 +741,146 @@ body {
 @media (max-width: 768px) {
 
     .home-container {
+
         flex-direction: column;
+
         gap: 30px;
+
     }
 
     .texto-lado {
+
         width: 80%;
+
     }
 
     .container {
+
         flex-direction: column;
+
     }
 
     .next {
+
         display: none;
+
     }
 
     .seta {
+
         margin-top: 10px;
+
     }
 
     .texto-extra {
+
         font-size: 16px;
+
     }
 
     .heart-wrapper {
+
         margin-top: 70px;
+
         height: 220px;
+
     }
 
     .contador {
+
         margin-top: 20px;
+
     }
 
     .contador-tempo {
+
         gap: 8px;
+
     }
 
     .tempo-box {
+
         min-width: 60px;
+
     }
 
     .tempo-numero {
+
         font-size: 22px;
+
     }
 
     .tempo-label {
+
         font-size: 9px;
+
     }
 
     .videos {
-        gap: 30px;
+
+        gap: 35px;
+
         padding: 0 15px;
+
     }
 
-    .video {
+    .videos-titulo {
+
+        font-size: 21px;
+
+        margin-bottom: -10px;
+
+    }
+
+    .video-container {
+
         border-radius: 20px;
+
+    }
+
+    .play-button {
+
+        width: 68px;
+
+        height: 68px;
+
+        font-size: 27px;
+
     }
 
 }
 
+
 @media (max-width: 400px) {
 
     .contador-tempo {
+
         gap: 4px;
+
     }
 
     .tempo-box {
+
         min-width: 55px;
+
     }
 
     .tempo-numero {
+
         font-size: 20px;
+
     }
 
     .tempo-label {
+
         font-size: 8px;
+
     }
 
-    .video {
+    .video-container {
+
         border-radius: 18px;
+
     }
 
 }
@@ -608,7 +918,9 @@ body {
     >
 
     <div class="heart-text">
+
         clique aqui ❤️
+
     </div>
 
 </div>
@@ -720,7 +1032,9 @@ body {
     <div class="texto">
 
         <p>
+
             Desde que te conheci, tudo ficou mais leve... ❤️
+
         </p>
 
 
@@ -748,7 +1062,9 @@ body {
             >
 
             <span class="heart-texto">
+
                 M.M
+
             </span>
 
         </div>
@@ -759,6 +1075,7 @@ body {
     <!-- ================= CONTADOR ================= -->
 
     <div class="contador">
+
 
         <div class="contador-titulo">
 
@@ -841,64 +1158,117 @@ body {
 
     <!-- ================= VÍDEOS ================= -->
 
-    <div class="videos">
+    <section class="videos">
 
 
-        <!-- VÍDEO 1 -->
+        <!-- TÍTULO -->
+
+        <h2 class="videos-titulo">
+
+            Nossos momentos 🤍
+
+        </h2>
+
+
+        <!-- ================= VÍDEO 1 ================= -->
 
         <div class="video-box">
 
-            <div class="video-titulo">
-                ❤️ Um momento nosso
-            </div>
+            <div class="video-container">
 
-            <video
-                class="video"
-                controls
-                playsinline
-                preload="metadata"
-            >
-
-                <source
-                    src="lv_7503640539556826421_20260911170732.mp4"
-                    type="video/mp4"
+                <video
+                    id="video1"
+                    class="video"
+                    playsinline
+                    preload="metadata"
                 >
 
-                Seu navegador não suporta vídeos.
+                    <source
+                        src="lv_7503640539556826421_20260911170732.mp4"
+                        type="video/mp4"
+                    >
 
-            </video>
+                    Seu navegador não suporta vídeos.
+
+                </video>
+
+
+                <!-- TELA PRETA -->
+
+                <div
+                    class="video-overlay"
+                    onclick="assistirVideo('video1', this)"
+                >
+
+                    <div class="play-button">
+
+                        ▶
+
+                    </div>
+
+                    <div class="play-text">
+
+                        assistir momento 🤍
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
 
-        <!-- VÍDEO 2 -->
+        <!-- ================= VÍDEO 2 ================= -->
 
         <div class="video-box">
 
-            <div class="video-titulo">
-                ❤️ Mais um momento nosso
-            </div>
+            <div class="video-container">
 
-            <video
-                class="video"
-                controls
-                playsinline
-                preload="metadata"
-            >
-
-                <source
-                    src="lv_0_20260911170919.mp4"
-                    type="video/mp4"
+                <video
+                    id="video2"
+                    class="video"
+                    playsinline
+                    preload="metadata"
                 >
 
-                Seu navegador não suporta vídeos.
+                    <source
+                        src="lv_0_20260911170919.mp4"
+                        type="video/mp4"
+                    >
 
-            </video>
+                    Seu navegador não suporta vídeos.
+
+                </video>
+
+
+                <!-- TELA PRETA -->
+
+                <div
+                    class="video-overlay"
+                    onclick="assistirVideo('video2', this)"
+                >
+
+                    <div class="play-button">
+
+                        ▶
+
+                    </div>
+
+                    <div class="play-text">
+
+                        assistir momento 🤍
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
 
-    </div>
+    </section>
 
 
 </div>
@@ -951,8 +1321,11 @@ function entrar() {
 let fotos = [
 
     "fotos/foto1.jpeg",
+
     "fotos/foto2.jpeg",
+
     "fotos/foto3.jpeg",
+
     "fotos/foto4.jpeg"
 
 ];
@@ -1026,7 +1399,9 @@ function atualizarContador() {
 
 
     if (diferenca < 0) {
+
         diferenca = 0;
+
     }
 
 
@@ -1090,6 +1465,114 @@ setInterval(
     atualizarContador,
     1000
 );
+
+
+/* ================= VÍDEOS ================= */
+
+/*
+
+    Ao clicar na tela preta:
+
+    1. Remove a proteção preta
+    2. Começa o vídeo
+    3. Tenta abrir tela cheia
+
+*/
+
+async function assistirVideo(id, overlay) {
+
+    const video =
+        document.getElementById(id);
+
+
+    /* Remove a tela preta */
+
+    overlay.classList.add("escondido");
+
+
+    try {
+
+        /*
+            Solicita tela cheia.
+            Em celulares, o navegador pode
+            controlar esse comportamento.
+        */
+
+        if (video.requestFullscreen) {
+
+            await video.requestFullscreen();
+
+        }
+
+        else if (video.webkitEnterFullscreen) {
+
+            video.webkitEnterFullscreen();
+
+        }
+
+    }
+
+    catch (erro) {
+
+        console.log(
+            "Tela cheia não disponível neste navegador."
+        );
+
+    }
+
+
+    /* Começa o vídeo */
+
+    video.play().catch(() => {});
+
+}
+
+
+/* ================= QUANDO TERMINAR ================= */
+
+document
+    .querySelectorAll(".video")
+    .forEach(video => {
+
+        video.addEventListener(
+            "ended",
+            () => {
+
+                /*
+                    Volta para a tela normal
+                    quando o vídeo acaba.
+                */
+
+                if (document.fullscreenElement) {
+
+                    document
+                        .exitFullscreen()
+                        .catch(() => {});
+
+                }
+
+                /*
+                    Mostra novamente a tela preta
+                    para evitar spoiler caso aperte
+                    novamente.
+                */
+
+                const container =
+                    video.parentElement;
+
+                const overlay =
+                    container.querySelector(
+                        ".video-overlay"
+                    );
+
+                overlay.classList.remove(
+                    "escondido"
+                );
+
+            }
+        );
+
+    });
 
 
 </script>
