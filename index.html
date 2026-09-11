@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,7 +17,13 @@
     font-family: "Segoe UI", sans-serif;
 }
 
-/* ================= TELAS ================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+}
 
 .tela {
     display: none;
@@ -46,12 +54,10 @@
 }
 
 @keyframes aparecer {
-
     to {
         opacity: 1;
         transform: scale(1);
     }
-
 }
 
 .heart-text {
@@ -63,11 +69,9 @@
 }
 
 @keyframes fade {
-
     to {
         opacity: 1;
     }
-
 }
 
 
@@ -76,106 +80,68 @@
 #home {
     background: radial-gradient(circle, #0d0d0d, #000);
     color: white;
-
     justify-content: center;
     align-items: center;
 }
 
 .home-container {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 6vw;
-
     width: 100%;
-
     max-width: 1100px;
-
     padding: 0 20px;
 }
 
 .texto-lado {
-
     width: 22vw;
-
     max-width: 260px;
-
     font-size: clamp(14px, 1.2vw, 18px);
-
     line-height: 1.7;
-
     opacity: 0.9;
-
     text-align: center;
 }
 
 .center {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 }
 
 .logo {
-
     width: clamp(140px, 18vw, 220px);
-
     border-radius: 20px;
-
     margin-bottom: 20px;
 }
 
 .btn {
-
     padding: 12px 30px;
-
     font-size: clamp(14px, 1vw, 16px);
-
     background: white;
-
     border-radius: 30px;
-
     border: none;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .btn:hover {
-
     background: #ff4d6d;
-
     color: white;
 }
 
 
-/* ================= PAGINA PRINCIPAL ================= */
+/* ================= PÁGINA PRINCIPAL ================= */
 
 #principal {
-
     background: radial-gradient(circle at center, #080808, #000);
-
     color: white;
-
     justify-content: flex-start;
-
     align-items: center;
-
     flex-direction: column;
-
     min-height: 100vh;
-
     padding-top: 50px;
-
     padding-bottom: 120px;
-
     overflow-x: hidden;
 }
 
@@ -183,47 +149,33 @@
 /* ================= FOTOS ================= */
 
 .container {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 2vw;
-
     width: 100%;
 }
 
 .main-img,
 .next {
-
     width: clamp(220px, 30vw, 320px);
-
     height: clamp(220px, 30vw, 320px);
-
     border-radius: 25px;
-
     overflow: hidden;
 }
 
 .main-img {
-
     box-shadow: 0 30px 80px rgba(0,0,0,0.9);
 }
 
 .main-img img,
 .next img {
-
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
 }
 
 .next {
-
     opacity: 0.03;
 }
 
@@ -231,23 +183,14 @@
 /* ================= SETA ================= */
 
 .seta {
-
     width: 38px;
-
     height: 38px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     background: rgba(255,255,255,0.05);
-
     border-radius: 50%;
-
     color: rgba(255,255,255,0.4);
-
     cursor: pointer;
 }
 
@@ -255,31 +198,21 @@
 /* ================= TEXTOS ================= */
 
 .texto {
-
     margin-top: 40px;
-
     text-align: center;
-
     max-width: 90%;
-
     color: white;
 }
 
 .texto p {
-
     font-size: 18px;
 }
 
 .texto-extra {
-
     margin-top: 15px;
-
     font-size: 20px;
-
     opacity: 0.85;
-
     line-height: 1.6;
-
     max-width: 700px;
 }
 
@@ -287,44 +220,30 @@
 /* ================= CORAÇÃO ================= */
 
 .heart-wrapper {
-
     margin-top: 70px;
-
     height: 230px;
-
     display: flex;
-
     justify-content: center;
-
     align-items: flex-start;
-
     width: 100%;
 }
 
 .heart-container {
-
     position: relative;
-
     display: inline-block;
-
     transform-origin: center;
-
     width: 60px;
-
     height: 60px;
 }
 
 .heart-final {
-
     width: 60px;
-
     transform-origin: center;
-
     transform: translateY(30px);
 }
 
 
-/* CRESCER */
+/* ================= ANIMAÇÃO ================= */
 
 @keyframes crescer {
 
@@ -337,9 +256,6 @@
     }
 
 }
-
-
-/* PULSAR */
 
 @keyframes pulsar {
 
@@ -357,7 +273,6 @@
 
 }
 
-
 #principal.ativa .heart-container {
 
     animation:
@@ -370,14 +285,12 @@
 }
 
 
-/* M.M */
+/* ================= M.M ================= */
 
 .heart-texto {
 
     position: absolute;
-
     top: 82%;
-
     left: 53%;
 
     transform: translate(-50%, -50%);
@@ -395,7 +308,8 @@
 
 #principal.ativa .heart-texto {
 
-    animation: aparecerTexto 1s ease forwards;
+    animation:
+        aparecerTexto 1s ease forwards;
 
     animation-delay: 4s;
 }
@@ -403,33 +317,24 @@
 @keyframes aparecerTexto {
 
     0% {
-
         opacity: 0;
-
         transform:
             translate(-50%, -50%)
             scale(0.5);
-
     }
 
     60% {
-
         opacity: 1;
-
         transform:
             translate(-50%, -50%)
             scale(1.1);
-
     }
 
     100% {
-
         opacity: 1;
-
         transform:
             translate(-50%, -50%)
             scale(1);
-
     }
 
 }
@@ -442,11 +347,9 @@
     width: 100%;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -476,7 +379,6 @@
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     gap: 25px;
@@ -489,7 +391,6 @@
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     min-width: 70px;
@@ -520,84 +421,156 @@
 }
 
 
+/* ================= VÍDEOS ================= */
+
+.videos {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 35px;
+
+    margin-top: 20px;
+
+    padding: 0 20px;
+}
+
+.video-box {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.video-titulo {
+
+    color: white;
+
+    font-size: 16px;
+
+    opacity: 0.75;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+
+.video {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    background: #080808;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,0.8);
+
+    display: block;
+}
+
+
 /* ================= RESPONSIVO ================= */
 
 @media (max-width: 768px) {
 
     .home-container {
-
         flex-direction: column;
-
         gap: 30px;
-
     }
 
     .texto-lado {
-
         width: 80%;
-
     }
 
     .container {
-
         flex-direction: column;
-
     }
 
     .next {
-
         display: none;
-
     }
 
     .seta {
-
         margin-top: 10px;
-
     }
 
     .texto-extra {
-
         font-size: 16px;
-
     }
 
     .heart-wrapper {
-
         margin-top: 70px;
-
         height: 220px;
-
     }
 
     .contador {
-
         margin-top: 20px;
-
     }
 
     .contador-tempo {
-
         gap: 8px;
-
     }
 
     .tempo-box {
-
         min-width: 60px;
-
     }
 
     .tempo-numero {
-
         font-size: 22px;
-
     }
 
     .tempo-label {
-
         font-size: 9px;
+    }
 
+    .videos {
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .video {
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .contador-tempo {
+        gap: 4px;
+    }
+
+    .tempo-box {
+        min-width: 55px;
+    }
+
+    .tempo-numero {
+        font-size: 20px;
+    }
+
+    .tempo-label {
+        font-size: 8px;
+    }
+
+    .video {
+        border-radius: 18px;
     }
 
 }
@@ -614,14 +587,20 @@
 
 <audio id="musica" loop>
 
-    <source src="musica.mp3" type="audio/mpeg">
+    <source
+        src="musica.mp3"
+        type="audio/mpeg">
 
 </audio>
 
 
 <!-- ================= INTRO ================= -->
 
-<div id="intro" class="tela ativa" onclick="irHome()">
+<div
+    id="intro"
+    class="tela ativa"
+    onclick="irHome()"
+>
 
     <img
         src="coracaov.png"
@@ -629,9 +608,7 @@
     >
 
     <div class="heart-text">
-
         clique aqui ❤️
-
     </div>
 
 </div>
@@ -639,7 +616,10 @@
 
 <!-- ================= HOME ================= -->
 
-<div id="home" class="tela">
+<div
+    id="home"
+    class="tela"
+>
 
     <div class="home-container">
 
@@ -686,12 +666,15 @@
 </div>
 
 
-<!-- ================= ULTIMA PAGINA ================= -->
+<!-- ================= PÁGINA PRINCIPAL ================= -->
 
-<div id="principal" class="tela">
+<div
+    id="principal"
+    class="tela"
+>
 
 
-    <!-- FOTOS -->
+    <!-- ================= FOTOS ================= -->
 
     <div class="container">
 
@@ -732,14 +715,12 @@
     </div>
 
 
-    <!-- TEXTOS -->
+    <!-- ================= TEXTOS ================= -->
 
     <div class="texto">
 
         <p>
-
             Desde que te conheci, tudo ficou mais leve... ❤️
-
         </p>
 
 
@@ -755,7 +736,7 @@
     </div>
 
 
-    <!-- CORAÇÃO -->
+    <!-- ================= CORAÇÃO ================= -->
 
     <div class="heart-wrapper">
 
@@ -767,9 +748,7 @@
             >
 
             <span class="heart-texto">
-
                 M.M
-
             </span>
 
         </div>
@@ -777,10 +756,9 @@
     </div>
 
 
-    <!-- CONTADOR -->
+    <!-- ================= CONTADOR ================= -->
 
     <div class="contador">
-
 
         <div class="contador-titulo">
 
@@ -798,15 +776,11 @@
                     id="dias"
                     class="tempo-numero"
                 >
-
                     0
-
                 </div>
 
                 <div class="tempo-label">
-
                     DIAS
-
                 </div>
 
             </div>
@@ -818,15 +792,11 @@
                     id="horas"
                     class="tempo-numero"
                 >
-
                     0
-
                 </div>
 
                 <div class="tempo-label">
-
                     HORAS
-
                 </div>
 
             </div>
@@ -838,15 +808,11 @@
                     id="minutos"
                     class="tempo-numero"
                 >
-
                     0
-
                 </div>
 
                 <div class="tempo-label">
-
                     MINUTOS
-
                 </div>
 
             </div>
@@ -858,19 +824,76 @@
                     id="segundos"
                     class="tempo-numero"
                 >
-
                     0
-
                 </div>
 
                 <div class="tempo-label">
-
                     SEGUNDOS
-
                 </div>
 
             </div>
 
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= VÍDEOS ================= -->
+
+    <div class="videos">
+
+
+        <!-- VÍDEO 1 -->
+
+        <div class="video-box">
+
+            <div class="video-titulo">
+                ❤️ Um momento nosso
+            </div>
+
+            <video
+                class="video"
+                controls
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    src="lv_7503640539556826421_20260911170732.mp4"
+                    type="video/mp4"
+                >
+
+                Seu navegador não suporta vídeos.
+
+            </video>
+
+        </div>
+
+
+        <!-- VÍDEO 2 -->
+
+        <div class="video-box">
+
+            <div class="video-titulo">
+                ❤️ Mais um momento nosso
+            </div>
+
+            <video
+                class="video"
+                controls
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    src="lv_0_20260911170919.mp4"
+                    type="video/mp4"
+                >
+
+                Seu navegador não suporta vídeos.
+
+            </video>
 
         </div>
 
@@ -902,7 +925,9 @@ function irHome() {
         document.getElementById("musica");
 
 
-    musica.play().catch(() => {});
+    musica
+        .play()
+        .catch(() => {});
 
 }
 
@@ -926,11 +951,8 @@ function entrar() {
 let fotos = [
 
     "fotos/foto1.jpeg",
-
     "fotos/foto2.jpeg",
-
     "fotos/foto3.jpeg",
-
     "fotos/foto4.jpeg"
 
 ];
@@ -972,16 +994,12 @@ atualizar();
 
 /* ================= CONTADOR ================= */
 
-
 /*
-   DATA DO INÍCIO:
 
-   28/03/2026 às 00:00:00
+    DATA DO INÍCIO:
 
-   No JavaScript:
-   Janeiro = 0
-   Fevereiro = 1
-   Março = 2
+    28/03/2026 às 00:00:00
+
 */
 
 const inicio =
@@ -997,7 +1015,6 @@ const inicio =
 
 function atualizarContador() {
 
-
     const agora =
         new Date();
 
@@ -1008,16 +1025,10 @@ function atualizarContador() {
         inicio.getTime();
 
 
-    /* Evita valores negativos */
-
     if (diferenca < 0) {
-
         diferenca = 0;
-
     }
 
-
-    /* DIAS */
 
     const dias =
         Math.floor(
@@ -1025,8 +1036,6 @@ function atualizarContador() {
             (1000 * 60 * 60 * 24)
         );
 
-
-    /* HORAS */
 
     const horas =
         Math.floor(
@@ -1036,8 +1045,6 @@ function atualizarContador() {
         );
 
 
-    /* MINUTOS */
-
     const minutos =
         Math.floor(
             (diferenca /
@@ -1046,8 +1053,6 @@ function atualizarContador() {
         );
 
 
-    /* SEGUNDOS */
-
     const segundos =
         Math.floor(
             (diferenca /
@@ -1055,8 +1060,6 @@ function atualizarContador() {
             % 60
         );
 
-
-    /* COLOCA NA TELA */
 
     document
         .getElementById("dias")
@@ -1080,12 +1083,8 @@ function atualizarContador() {
 }
 
 
-/* PRIMEIRA ATUALIZAÇÃO */
-
 atualizarContador();
 
-
-/* ATUALIZA A CADA 1 SEGUNDO */
 
 setInterval(
     atualizarContador,
